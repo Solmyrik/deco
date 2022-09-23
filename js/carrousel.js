@@ -22,8 +22,8 @@ setInterval(() => {
   images[3].classList.add('anime-on');
   setTimeout(() => {
     addIndex();
-  }, 4100);
-}, 6000);
+  }, 3100);
+}, 5000);
 
 // let i = 1;
 // function addClass() {

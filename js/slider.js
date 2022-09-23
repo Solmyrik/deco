@@ -21,19 +21,27 @@
 // });
 new Swiper('.slider__block', {
   breakpoints: {
+    1900: {
+      slidesPerView: 5,
+    },
     1000: {
       slidesPerView: 4,
     },
     767: {
       slidesPerView: 3,
     },
+    480: {
+      slidesPerView: 2,
+    },
     320: {
       slidesPerView: 1,
+      centerSlides: true,
     },
   },
   slidesPerView: 4,
   simulateTouch: false,
   loop: true,
+  speed: 700,
   navigation: {
     nextEl: '.slider__button_next',
     prevEl: '.slider__button_prev',

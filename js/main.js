@@ -119,3 +119,10 @@ document.addEventListener('DOMContentLoaded', function () {
     phoneInput.addEventListener('paste', onPhonePaste, false);
   }
 });
+
+const up = document.querySelector('.footer__up');
+up.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+  });
+});
