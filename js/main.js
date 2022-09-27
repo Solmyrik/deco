@@ -120,8 +120,13 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-const up = document.querySelector('.footer__up');
-up.addEventListener('click', () => {
+const up = document.querySelectorAll('.footer__up');
+up[0].addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+  });
+});
+up[1].addEventListener('click', () => {
   window.scrollTo({
     top: 0,
   });
