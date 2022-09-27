@@ -4,12 +4,7 @@ const child1 = images[0].children;
 const child2 = images[1].children;
 const child3 = images[2].children;
 const child4 = images[3].children;
-const index = [
-  1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3,
-  4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6,
-  1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3,
-  4, 5, 6, 1, 2, 3, 4, 5, 6,
-];
+const index = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
 let i = 1;
 
 // child1[0].src = 'img/carrousel/2.jpg';
@@ -22,8 +17,8 @@ setInterval(() => {
   images[3].classList.add('anime-on');
   setTimeout(() => {
     addIndex();
-  }, 3100);
-}, 5000);
+  }, 2100);
+}, 4000);
 
 // let i = 1;
 // function addClass() {
@@ -49,6 +44,9 @@ function addIndex() {
   images[2].classList.remove('anime-right');
   images[3].classList.remove('anime-on');
   i++;
+  if (i % 5 == 0) {
+    index.push(1, 2, 3, 4, 5, 6);
+  }
 }
 // addClass();
 // addClass();

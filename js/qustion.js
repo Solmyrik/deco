@@ -9,7 +9,12 @@ btnNext.addEventListener('click', nextStep);
 btnPrev.addEventListener('click', prevStep);
 
 function nextStep() {
-  if (setVariant[step] || step > 3) {
+  if (step == 6) {
+    questionItems[6].classList.remove('active');
+    questionItems[0].classList.add('active');
+    step = 0;
+  }
+  if (setVariant[step] != null || step > 3) {
     if (step < 4) {
       deleteError();
     }
@@ -24,6 +29,8 @@ function nextStep() {
     if (step == 5) {
       btnPrev.style.display = 'none';
       btnNext.style.display = 'none';
+      const popupQuistionBtn = document.querySelector('.popup-question__btn');
+      popupQuistionBtn.addEventListener('click', valideQuestionForm);
     }
     progress();
   } else {
@@ -91,4 +98,38 @@ function errorVarian() {
 function deleteError() {
   const error = document.querySelectorAll('.popup-question__error');
   error[step].classList.remove('active');
+}
+
+function valideQuestionForm() {
+  let quantity = 0;
+  const numberInput = document.querySelectorAll('.number-input_q');
+  const nameInput = document.querySelectorAll('.name-input_q');
+  const checkbox = document.querySelectorAll('._checkbox-wallet');
+  const fakeInput = document.querySelectorAll('._fake-wallet');
+  if (nameInput[0].value.length < 1) {
+    error();
+    nameInput[0].classList.add('error');
+    quantity++;
+  } else {
+    nameInput[0].classList.remove('error');
+  }
+  if (numberInput[0].value.length != 18) {
+    error();
+    quantity++;
+    numberInput[0].classList.add('error');
+  } else {
+    numberInput[0].classList.remove('error');
+  }
+  if (!checkbox[2].checked) {
+    error();
+    fakeInput[2].classList.add('error');
+    quantity++;
+  } else {
+    fakeInput[2].classList.remove('error');
+  }
+  if (quantity == 0) {
+    questionItems[step].classList.remove('active');
+    questionItems[step + 1].classList.add('active');
+    step++;
+  }
 }
