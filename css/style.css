@@ -968,6 +968,10 @@ section {
   margin-left: 15px;
 }
 
+.footer__title a {
+  color: #151a21;
+}
+
 .footer__paragraph {
   line-height: 25px;
 }
@@ -2708,6 +2712,8 @@ section {
 .slider__btns {
   text-align: center;
   margin-top: 150px;
+  position: relative;
+  z-index: 5;
 }
 
 @media (max-width: 479.98px) {
