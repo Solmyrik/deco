@@ -2074,6 +2074,13 @@ section {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  .request-popup__close {
+    top: 20px;
+    right: 20px;
+  }
+}
+
 .request-popup__close svg path {
   -webkit-transition: stroke 0.2s;
   transition: stroke 0.2s;
