@@ -9,6 +9,9 @@ btnNext.addEventListener('click', nextStep);
 btnPrev.addEventListener('click', prevStep);
 
 function nextStep() {
+  if (step == 0) {
+    btnPrev.classList.add('active');
+  }
   if (step == 6) {
     questionItems[6].classList.remove('active');
     questionItems[0].classList.add('active');
@@ -38,11 +41,16 @@ function nextStep() {
   }
 }
 function prevStep() {
-  questionItems[step].classList.remove('active');
-  questionItems[step - 1].classList.add('active');
-  step--;
-  variant();
-  progress();
+  if (step == 1) {
+    btnPrev.classList.remove('active');
+  }
+  if (step > 0) {
+    questionItems[step].classList.remove('active');
+    questionItems[step - 1].classList.add('active');
+    step--;
+    variant();
+    progress();
+  }
 }
 
 let setVariant = {

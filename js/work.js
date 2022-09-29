@@ -12,6 +12,9 @@ function activeBtn(e) {
     current.classList.add('active');
     activePagination = index - 1;
     activeWork(activePagination);
+    window.scrollTo({
+      top: 0,
+    });
   }
 }
 function activeWork(index) {
