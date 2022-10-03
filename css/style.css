@@ -4282,9 +4282,13 @@ section {
           justify-content: center;
 }
 
-@media (min-width: 1242px) {
+.lol-11 {
+  width: 450px;
+}
+
+@media (max-width: 992px) {
   .lol-11 {
-    width: 450px;
+    width: 100%;
   }
 }
 
@@ -4429,8 +4433,10 @@ section {
   }
 }
 
-.lol-31 {
-  width: 432px;
+@media (min-width: 1242px) {
+  .lol-31 {
+    width: 432px;
+  }
 }
 
 @media (min-width: 992px) {
