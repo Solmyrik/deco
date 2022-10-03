@@ -9,7 +9,7 @@
     <link rel="icon" href="img/icons/favicon.png" />
     <!-- <script defer src="js/carrousel.js"></script> -->
     <!-- <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
-    <!-- <script defer src="js/popups.js"></script> -->
+    <script defer src="js/popups.js"></script>
     <!-- <script defer src="js/slider.js"></script> -->
     <!-- <script defer src="js/qustion.js"></script> -->
     <script defer src="js/email-secondary.js"></script>
@@ -19,8 +19,14 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <!-- header 2.2 -->
+        <!-- header 3.0 -->
         <div class="header__wrapper">
+          <div class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <div class="header__container">
             <a href="index.html" class="header__logo">
               <img src="img/icons/logo.svg" alt="logo" />
@@ -230,12 +236,6 @@
               </svg>
               <p>Напишите нам</p>
             </a>
-            <div class="header__burger">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
           </div>
         </div>
       </header>
@@ -258,27 +258,12 @@
                   />
                 </svg>
               </div>
-              <a href="curtains.html" class="navigation__item">Шторы</a>
-              <div class="navigation__arrow">
-                <svg
-                  width="12"
-                  height="8"
-                  viewBox="0 0 12 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.53033 0.46967C1.23744 0.176777 0.762563 0.176777 0.46967 0.46967C0.176777 0.762563 0.176777 1.23744 0.46967 1.53033L1.53033 0.46967ZM6 6L5.46967 6.53033L6 7.06066L6.53033 6.53033L6 6ZM11.5303 1.53033C11.8232 1.23744 11.8232 0.762563 11.5303 0.46967C11.2374 0.176777 10.7626 0.176777 10.4697 0.46967L11.5303 1.53033ZM0.46967 1.53033L5.46967 6.53033L6.53033 5.46967L1.53033 0.46967L0.46967 1.53033ZM6.53033 6.53033L11.5303 1.53033L10.4697 0.46967L5.46967 5.46967L6.53033 6.53033Z"
-                    fill="#151A21"
-                  />
-                </svg>
-              </div>
               <div class="navigation__item active">Наши работы</div>
             </div>
             <h2 class="work__title _title lol-18">наши работы</h2>
             <div class="work__content">
               <div class="work__name _name">
-                За 18 лет мы убедились в том, что проект - это уют и атмосфера!
+                За 18 лет мы убедились в том, что проект — это уют и атмосфера!
               </div>
               <div class="work__text _text">
                 Поэтому мы не делим работы на гостинные, спальни, детские, кухни и другие помещения.
@@ -450,6 +435,40 @@
                     </div>
                     <div class="work__smallright">
                       <div class="work__small">
+                        <img src="img/work/23.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="work__items">
+                <div class="work__item">
+                  <div class="work__subitem">
+                    <div class="work__big">
+                      <img src="img/work/25.jpg" alt="" />
+                    </div>
+                    <div class="work__small">
+                      <img src="img/work/26.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="work__subitem">
+                    <div class="work__big">
+                      <img src="img/work/27.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="work__item">
+                  <div class="work__subitem">
+                    <div class="work__big">
+                      <img src="img/work/28.jpeg" alt="" />
+                    </div>
+                  </div>
+                  <div class="work__subitem">
+                    <div class="work__big">
+                      <img src="img/work/29.jpg" alt="" />
+                    </div>
+                    <div class="work__smallright">
+                      <div class="work__small">
                         <img src="img/work/30.jpg" alt="" />
                       </div>
                     </div>
@@ -463,11 +482,12 @@
               <div class="work__pagination">03</div>
               <div class="work__pagination">04</div>
               <div class="work__pagination">05</div>
+              <div class="work__pagination none">06</div>
             </div>
           </div>
         </section>
 
-        <section class="textpic">
+        <section class="textpic lol-26">
           <div class="textpic__container textpic__pc">
             <div class="textpic__title">
               <h2 class="lol-13">
@@ -566,6 +586,7 @@
                         />
                       </svg>
                     </div>
+                    <a href="#popup-thanks" class="popup-link popup-thanks-fake"></a>
                   </div>
                 </form>
               </div>
@@ -953,6 +974,38 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div id="popup-thanks" class="popup">
+      <div class="popup__body">
+        <div class="popup__content request-popup">
+          <div href="" class="request-popup__close close-popup">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1L19 19M1 19L19 1"
+                stroke="#151A21"
+                stroke-width="0.857143"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="request-popup__title request-popup__title_two">
+            <p>Благодарим вас за оставленную <span>заявку</span></p>
+            <p>Наш <span>дизайнер</span> позвонит в ближайшее</p>
+            <p>время и обсудит с вами детали</p>
+            <p>будущего <span>проекта.</span></p>
+          </div>
+          <div class="request-popup__logo">
+            <p class="request-popup__logo_text">Ваш</p>
+            <img src="img/icons/brownLogo.svg" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

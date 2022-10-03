@@ -14,26 +14,40 @@ if (formBtn) {
 }
 
 function valideForm() {
-  // console.log(nameInput[0].value);
+  const popupThanksFake = document.querySelector('.popup-thanks-fake');
+  let quantity = 0;
   if (nameInput[0].value.length < 1) {
     error();
     nameInput[0].classList.add('error');
+    quantity++;
   } else {
     nameInput[0].classList.remove('error');
   }
   if (numberInput[0].value.length != 18) {
     error();
     numberInput[0].classList.add('error');
+    quantity++;
   } else {
     numberInput[0].classList.remove('error');
   }
   if (!checkbox[0].checked) {
     error();
     fakeInput[0].classList.add('error');
+    quantity++;
   } else {
     fakeInput[0].classList.remove('error');
+  }
+  if (quantity == 0) {
+    nameInput[0].value = '';
+    numberInput[0].value = '';
+    errorInviteDelete();
+    popupThanksFake.click();
   }
 }
 function error() {
   errorForm[0].classList.add('active');
+}
+function errorInviteDelete() {
+  const errorForm = document.querySelectorAll('._error-form');
+  errorForm[0].classList.remove('active');
 }

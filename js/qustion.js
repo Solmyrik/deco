@@ -88,7 +88,7 @@ function counter() {
   });
   decrement.addEventListener('click', () => {
     const num = number.textContent;
-    if (num > 0) {
+    if (num > 1) {
       number.textContent = Number(num) - 1;
     }
   });
@@ -136,8 +136,10 @@ function valideQuestionForm() {
     fakeInput[2].classList.remove('error');
   }
   if (quantity == 0) {
+    const stripe = document.querySelector('.popup-question__progress');
     questionItems[step].classList.remove('active');
     questionItems[step + 1].classList.add('active');
+    stripe.style.display = 'none';
     step++;
   }
 }

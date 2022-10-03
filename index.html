@@ -7,7 +7,7 @@
     <title>Deco plus</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/icons/favicon.png" />
-    <script defer src="js/carrousel.js"></script>
+    <!-- <script defer src="js/carrousel.js"></script> -->
     <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="js/popups.js"></script>
     <script defer src="js/email-main.js"></script>
@@ -18,8 +18,14 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <!-- header 2.2 -->
+        <!-- header 3.0 -->
         <div class="header__wrapper">
+          <div class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <div class="header__container">
             <a href="index.html" class="header__logo">
               <img src="img/icons/logo.svg" alt="logo" />
@@ -229,12 +235,6 @@
               </svg>
               <p>Напишите нам</p>
             </a>
-            <div class="header__burger">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
           </div>
         </div>
       </header>
@@ -551,7 +551,7 @@
                 <form class="request-popup__form">
                   <div class="request-popup__item _item-input">
                     <input
-                      class="request-popup__input _input"
+                      class="request-popup__input _input patternnameinput"
                       type="text"
                       placeholder="Введите имя"
                     />
@@ -559,7 +559,7 @@
                   </div>
                   <div class="request-popup__item _item-input">
                     <input
-                      class="request-popup__input _input"
+                      class="request-popup__input _input patternnumberinput"
                       type="tel"
                       placeholder="Введите номер вашего телефона"
                       data-tel-input
@@ -583,7 +583,7 @@
                     </div>
                   </label>
                   <div class="pattern__btns">
-                    <button class="_btn">
+                    <div class="pattern_btn _btn">
                       Оставить заявку
                       <svg
                         width="34"
@@ -597,7 +597,8 @@
                           fill="#151A21"
                         />
                       </svg>
-                    </button>
+                    </div>
+                    <a href="#popup-thanks" class="popup-link popup-thanks-fake"></a>
                   </div>
                 </form>
               </div>
@@ -760,13 +761,17 @@
         </section>
         <section class="textpic">
           <div class="textpic__container textpic_mainpc">
-            <div class="textpic__title">
+            <div style="line-height: 100%" class="textpic__title">
               <h2 class="lol-12">
-                измените атмосферу <span class="textpic__russnel lol-5">пространства</span>
+                измените атмосферу
+                <span style="margin-left: 10px" class="textpic__russnel">пространства</span>
               </h2>
-              <div class="textpic__center">
+              <div style="align-items: center; margin: 15px 0px" class="textpic__center">
                 <img src="img/textpic/1.jpg" alt="" />
-                <p><span class="textpic__russnel lol-5">в</span> вашем доме</p>
+                <p style="display: flex; align-items: center">
+                  <span style="margin-right: 15px" class="textpic__russnel lol-5">в</span> вашем
+                  доме
+                </p>
                 <img src="img/order/1.jpg" alt="" />
               </div>
               <p>
@@ -1194,10 +1199,16 @@
               />
             </svg>
           </div>
-          <div class="request-popup__title">
+          <div class="request-popup__title request-popup__title_pc">
             <p>Оставьте свои <span>контактные данные.</span></p>
             <p>Дизайнер <span>свяжется</span> с вами в ближайшее время</p>
             <p>и ответит на ваши вопросы.</p>
+          </div>
+          <div class="request-popup__title request-popup__title_modile">
+            <p>Оставьте свои <span>контактные данные.</span></p>
+            <p><span>Дизайнер</span> свяжется с вами</p>
+            <p>в ближайшее время и ответит</p>
+            <p>на ваши вопросы.</p>
           </div>
           <form class="request-popup__form">
             <div class="request-popup__item _item-input">
@@ -1432,7 +1443,7 @@
                   </div>
                 </div>
                 <div class="popup-question__variant">
-                  <div class="popup-question__title">Японские панели</div>
+                  <div class="popup-question__title lol-30">Японские панели</div>
                   <div class="popup-question__img">
                     <img src="img/steps/36.png" alt="" />
                   </div>
@@ -1528,16 +1539,26 @@
                 <img src="img/steps/counter.png" alt="" />
               </div>
             </div>
-            <div class="popup-question__item popup-question__item_p">
+            <div class="popup-question__item popup-question__item_p popup-question__item_not">
               <div class="popup-question__titles">
-                <div class="popup-question__name popup-question__name_p _name">
+                <div
+                  class="popup-question__name popup-question__name_p _name popup-question__name_pc"
+                >
                   Мы рассчитаем стоимость <span>штор</span> <br />
                   для <span style="margin-right: 15px">вашего окна </span>по выбранным критериям
                   <br />
                   и пришлём вам <span>результаты</span>
                 </div>
+                <div
+                  class="popup-question__name popup-question__name_p _name popup-question__name_modile"
+                >
+                  <p>Мы рассчитаем стоимость <span>штор</span></p>
+                  <p>для <span>вашего окна </span>по выбранным</p>
+                  <p>критериям и пришлём вам</p>
+                  <p><span>результаты.</span></p>
+                </div>
               </div>
-              <form class="request-popup__form request-popup__form_p">
+              <form class="request-popup__form request-popup__form_p popup-question__form">
                 <div class="request-popup__item _item-input">
                   <input
                     class="request-popup__input _input name-input_q"
@@ -1635,6 +1656,38 @@
                 />
               </svg>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="popup-thanks" class="popup">
+      <div class="popup__body">
+        <div class="popup__content request-popup">
+          <div href="" class="request-popup__close close-popup">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1L19 19M1 19L19 1"
+                stroke="#151A21"
+                stroke-width="0.857143"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="request-popup__title request-popup__title_two">
+            <p>Благодарим вас за оставленную <span>заявку</span></p>
+            <p>Наш <span>дизайнер</span> позвонит в ближайшее</p>
+            <p>время и обсудит с вами детали</p>
+            <p>будущего <span>проекта.</span></p>
+          </div>
+          <div class="request-popup__logo">
+            <p class="request-popup__logo_text">Ваш</p>
+            <img src="img/icons/brownLogo.svg" alt="" />
           </div>
         </div>
       </div>

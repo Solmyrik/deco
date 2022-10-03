@@ -9,7 +9,7 @@
     <link rel="icon" href="img/icons/favicon.png" />
     <!-- <script defer src="js/carrousel.js"></script> -->
     <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <!-- <script defer src="js/popups.js"></script> -->
+    <script defer src="js/popups.js"></script>
     <script defer src="js/slider.js"></script>
     <script defer src="js/email-secondary.js"></script>
     <!-- <script defer src="js/qustion.js"></script> -->
@@ -18,8 +18,14 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <!-- header 2.2 -->
+        <!-- header 3.0 -->
         <div class="header__wrapper">
+          <div class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <div class="header__container">
             <a href="index.html" class="header__logo">
               <img src="img/icons/logo.svg" alt="logo" />
@@ -229,12 +235,6 @@
               </svg>
               <p>Напишите нам</p>
             </a>
-            <div class="header__burger">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
           </div>
         </div>
       </header>
@@ -266,7 +266,7 @@
                   <img src="img/curtain/1.jpg" alt="" />
                 </div>
               </div>
-              <div class="head-servise__center">
+              <div class="head-servise__center lol-29">
                 <div class="head-servise__item">
                   <div class="head-servise__name _name">
                     Карниз – один из ключевых элементов интерьера
@@ -281,7 +281,7 @@
                 </div>
                 <div class="head-servise__item">
                   <div class="head-servise__name _name">Как подобрать тип карниза?</div>
-                  <div class="head-servise__text _text">
+                  <div class="head-servise__text _text lol-31">
                     К примеру, для тяжелых штор мы рекоммендуем приобретать карнизы, способные
                     выдержать их значительный вес. Для низких помещений лучше всего подойдет
                     потолочный карниз, что позволит визуально расширить пространство. Для окон
@@ -326,7 +326,7 @@
 
             <div class="servise__center center-servise">
               <div class="center-servise__big">
-                <div class="center-servise__title _name">Электро-карнизы</div>
+                <div class="center-servise__title _name">Электро—карнизы</div>
                 <div class="center-servise__bigimg">
                   <img src="img/curtain/5.jpg" alt="" />
                 </div>
@@ -425,7 +425,7 @@
           </div>
         </section>
 
-        <section class="textpic">
+        <section class="textpic lol-26">
           <div class="textpic__container textpic__pc">
             <div class="textpic__title">
               <h2 class="lol-13">
@@ -524,6 +524,7 @@
                         />
                       </svg>
                     </div>
+                    <a href="#popup-thanks" class="popup-link popup-thanks-fake"></a>
                   </div>
                 </form>
               </div>
@@ -911,6 +912,38 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div id="popup-thanks" class="popup">
+      <div class="popup__body">
+        <div class="popup__content request-popup">
+          <div href="" class="request-popup__close close-popup">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1L19 19M1 19L19 1"
+                stroke="#151A21"
+                stroke-width="0.857143"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="request-popup__title request-popup__title_two">
+            <p>Благодарим вас за оставленную <span>заявку</span></p>
+            <p>Наш <span>дизайнер</span> позвонит в ближайшее</p>
+            <p>время и обсудит с вами детали</p>
+            <p>будущего <span>проекта.</span></p>
+          </div>
+          <div class="request-popup__logo">
+            <p class="request-popup__logo_text">Ваш</p>
+            <img src="img/icons/brownLogo.svg" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -60,3 +60,47 @@ function error() {
 }
 
 /////
+const patternBtn = document.querySelector('.pattern_btn');
+patternBtn.addEventListener('click', (e) => {
+  let quantity = 0;
+  const popupThanksFake = document.querySelector('.popup-thanks-fake');
+  const patternNumber = document.querySelector('.patternnumberinput');
+  const patternName = document.querySelector('.patternnameinput');
+  const checkbox = document.querySelectorAll('._checkbox-wallet');
+  const fakeInput = document.querySelectorAll('._fake-wallet');
+  if (patternName.value.length < 1) {
+    errorInvite();
+    patternName.classList.add('error');
+    quantity++;
+  } else {
+    patternName.classList.remove('error');
+  }
+  if (patternNumber.value.length != 18) {
+    errorInvite();
+    quantity++;
+    patternNumber.classList.add('error');
+  } else {
+    patternNumber.classList.remove('error');
+  }
+  if (!checkbox[0].checked) {
+    errorInvite();
+    fakeInput[0].classList.add('error');
+    quantity++;
+  }
+  if (quantity === 0) {
+    patternNumber.value = '';
+    patternName.value = '';
+    errorInviteDelete();
+    patternBtn.classList.add('popup-link');
+    popupThanksFake.click();
+  }
+});
+function errorInvite() {
+  const errorForm = document.querySelectorAll('._error-form');
+  console.log(errorForm);
+  errorForm[0].classList.add('active');
+}
+function errorInviteDelete() {
+  const errorForm = document.querySelectorAll('._error-form');
+  errorForm[0].classList.remove('active');
+}

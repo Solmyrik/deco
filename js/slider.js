@@ -29,7 +29,7 @@ new Swiper('.slider__block', {
     1000: {
       slidesPerView: 4,
     },
-    767: {
+    768: {
       slidesPerView: 3,
     },
     480: {
