@@ -532,6 +532,25 @@ section {
   z-index: 10;
 }
 
+.header__logo img {
+  width: 111px;
+  height: 66px;
+}
+
+.header__logo img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.header__logo:hover img:nth-child(2) {
+  opacity: 1;
+}
+
 .header__whatsapp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1062,6 +1081,31 @@ section {
             flex-direction: column;
     gap: 15px;
   }
+}
+
+.footer__logo {
+  position: relative;
+  z-index: 10;
+}
+
+.footer__logo img {
+  width: 111px;
+  height: 66px;
+}
+
+.footer__logo img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  background-color: #fff8e7;
+}
+
+.footer__logo:hover img:nth-child(2) {
+  opacity: 1;
 }
 
 .footer__links {
