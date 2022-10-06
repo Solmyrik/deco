@@ -124,10 +124,12 @@ const up = document.querySelectorAll('.footer__up');
 up[0].addEventListener('click', () => {
   window.scrollTo({
     top: 0,
+    behavior: 'smooth',
   });
 });
 up[1].addEventListener('click', () => {
   window.scrollTo({
     top: 0,
+    behavior: 'smooth',
   });
 });

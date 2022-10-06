@@ -6,7 +6,12 @@ const child3 = images[2].children;
 const child4 = images[3].children;
 const index = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
 let i = 1;
+let prefix = '';
 
+let carrouselWidth = document.body.clientWidth;
+if (carrouselWidth < 992) {
+  prefix = 't';
+}
 // child1[0].src = 'img/carrousel/2.jpg';
 
 setInterval(() => {
@@ -31,10 +36,18 @@ setInterval(() => {
 
 function addIndex() {
   //   console.log(i);
-  child1[0].src = `img/carrousel/${index[i]}.png`;
-  child2[0].src = `img/carrousel/${index[i + 1]}.png`;
-  child3[0].src = `img/carrousel/${index[i + 2]}.png`;
-  child4[0].src = `img/carrousel/${index[i + 3]}.png`;
+  if (prefix.length == 0) {
+    child1[0].src = `img/carrousel/${index[i] + prefix}.png`;
+    child2[0].src = `img/carrousel/${index[i + 1] + prefix}.png`;
+    child3[0].src = `img/carrousel/${index[i + 2] + prefix}.png`;
+    child4[0].src = `img/carrousel/${index[i + 3] + prefix}.png`;
+  } else {
+    child1[1].src = `img/carrousel/${index[i] + prefix}.png`;
+    child2[1].src = `img/carrousel/${index[i + 1] + prefix}.png`;
+    child3[1].src = `img/carrousel/${index[i + 2] + prefix}.png`;
+    child4[1].src = `img/carrousel/${index[i + 3] + prefix}.png`;
+  }
+
   number[0].textContent = `${'0' + index[i]}.`;
   number[1].textContent = `${'0' + index[i + 1]}.`;
   number[2].textContent = `${'0' + index[i + 2]}.`;
