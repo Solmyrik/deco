@@ -12,6 +12,7 @@ let carrouselWidth = document.body.clientWidth;
 if (carrouselWidth < 992) {
   prefix = 't';
 }
+
 // child1[0].src = 'img/carrousel/2.jpg';
 
 setInterval(() => {
@@ -42,6 +43,7 @@ function addIndex() {
     child3[0].src = `img/carrousel/${index[i + 2] + prefix}.png`;
     child4[0].src = `img/carrousel/${index[i + 3] + prefix}.png`;
   } else {
+    console.log('jfdslS');
     child1[1].src = `img/carrousel/${index[i] + prefix}.png`;
     child2[1].src = `img/carrousel/${index[i + 1] + prefix}.png`;
     child3[1].src = `img/carrousel/${index[i + 2] + prefix}.png`;
