@@ -9,7 +9,9 @@
 
 ## About the project
 
-![Video-Gif720p](https://github.com/Solmyrik/septik/blob/main/git/%D0%A1%D0%B5%D0%BF%D1%82%D0%B8%D0%BA_-_Google_Chrome_2022-10-28_12-30-26.gif?raw=true)
+![Video-Gif720p](https://github.com/Solmyrik/deco/blob/main/git/Deco%20plus%20-%20Google%20Chrome%202022-10-28%2016-53-33.gif?raw=true)
+![Video-Gif720p](https://github.com/Solmyrik/deco/blob/main/git/Deco%20plus%20-%20Google%20Chrome%202022-10-28%2016-53-59%20(1).gif?raw=true)
+![Video-Gif720p](https://github.com/Solmyrik/deco/blob/main/git/%D0%9D%D0%B0%D1%88%D0%B8%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20-%20Google%20Chrome%202022-10-28%2016-54-55.gif?raw=true)
 
 
 ## Project technologies
