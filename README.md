@@ -9,8 +9,19 @@
 
 ## About the project
 
+A multi-page website of a design studio for sewing curtains with a beautiful adaptive design. Created in pure JavaScript and SCSS. With many custom elements, beautiful animations and design tricks. Sliders created using the swiperjs library
+
+
 ![Video-Gif720p](https://github.com/Solmyrik/deco/blob/main/git/Deco%20plus%20-%20Google%20Chrome%202022-10-28%2016-53-33.gif?raw=true)
+
+A quiz that collects the customer preferences and sends data by email
+
+
 ![Video-Gif720p](https://github.com/Solmyrik/deco/blob/main/git/Deco%20plus%20-%20Google%20Chrome%202022-10-28%2016-53-59%20(1).gif?raw=true)
+
+Portfolio with pagination elements
+
+
 ![Video-Gif720p](https://github.com/Solmyrik/deco/blob/main/git/%D0%9D%D0%B0%D1%88%D0%B8%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20-%20Google%20Chrome%202022-10-28%2016-54-55.gif?raw=true)
 
 
