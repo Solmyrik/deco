@@ -6,17 +6,8 @@ const child3 = images[2].children;
 const child4 = images[3].children;
 const index = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
 let i = 1;
-let prefix = '';
-
-let carrouselWidth = document.body.clientWidth;
-if (carrouselWidth < 992) {
-  prefix = 't';
-}
-
-// child1[0].src = 'img/carrousel/2.jpg';
 
 setInterval(() => {
-  console.log('ok');
   images[0].classList.add('anime-left');
   images[1].classList.add('anime-center');
   images[2].classList.add('anime-right');
@@ -26,29 +17,11 @@ setInterval(() => {
   }, 2100);
 }, 4000);
 
-// let i = 1;
-// function addClass() {
-//   setTimeout(() => {
-//     console.log('click');
-//     images[0].classList.add('anime-left');
-//     addIndex(i);
-//   }, 5000);
-// }
-
 function addIndex() {
-  //   console.log(i);
-  if (prefix.length == 0) {
-    child1[0].src = `img/carrousel/${index[i] + prefix}.png`;
-    child2[0].src = `img/carrousel/${index[i + 1] + prefix}.png`;
-    child3[0].src = `img/carrousel/${index[i + 2] + prefix}.png`;
-    child4[0].src = `img/carrousel/${index[i + 3] + prefix}.png`;
-  } else {
-    console.log('jfdslS');
-    child1[1].src = `img/carrousel/${index[i] + prefix}.png`;
-    child2[1].src = `img/carrousel/${index[i + 1] + prefix}.png`;
-    child3[1].src = `img/carrousel/${index[i + 2] + prefix}.png`;
-    child4[1].src = `img/carrousel/${index[i + 3] + prefix}.png`;
-  }
+  child1[0].src = `img/carrousel/${index[i]}.webp`;
+  child2[0].src = `img/carrousel/${index[i + 1]}.webp`;
+  child3[0].src = `img/carrousel/${index[i + 2]}.webp`;
+  child4[0].src = `img/carrousel/${index[i + 3]}.webp`;
 
   number[0].textContent = `${'0' + index[i]}.`;
   number[1].textContent = `${'0' + index[i + 1]}.`;
