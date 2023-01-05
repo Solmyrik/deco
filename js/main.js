@@ -133,3 +133,9 @@ up[1].addEventListener('click', () => {
     behavior: 'smooth',
   });
 });
+up[2].addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
