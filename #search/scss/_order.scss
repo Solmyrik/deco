@@ -1,0 +1,84 @@
+.order {
+  &__container {
+  }
+
+  &__title {
+    @media (max-width: $md4) {
+      text-align: left;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+    @media (max-width: $md2) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: $md4) {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item {
+    flex: 0 1 25%;
+    @media (max-width: $md2) {
+      flex: 0 1 40%;
+    }
+    @media (max-width: $md3) {
+      flex: 0 1 45%;
+    }
+  }
+
+  &__number {
+    font-size: 25px;
+    font-family: $snell;
+    color: $brown;
+    margin-bottom: 5px;
+    // margin-left: 5px;
+    @media (max-width: $md4) {
+      margin-bottom: 0;
+      margin-right: 8px;
+    }
+  }
+
+  &__names {
+    @media (max-width: $md4) {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 15px;
+    @media (max-width: $md4) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__text {
+  }
+
+  &__img {
+    // padding-bottom: 50%;
+    // @media (max-width: $md4) {
+    //   padding-bottom: 65%;
+    // }
+    img {
+      width: 100%;
+      height: 578px;
+      @media (max-width: $md14) {
+        height: 500px;
+      }
+      @media (max-width: $md2) {
+        height: 400px;
+      }
+      @media (max-width: $md4) {
+        height: 280px;
+      }
+    }
+  }
+}

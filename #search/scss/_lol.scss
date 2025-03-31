@@ -1,0 +1,299 @@
+.lol-1 {
+  @media (max-width: $md4) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.lol-2 {
+  @media (max-width: $md2) {
+    width: 535px;
+    position: relative;
+    left: -45px;
+  }
+
+  @media (max-width: $md4) {
+    display: none;
+  }
+}
+.lol-3 {
+  font-size: 20px;
+  width: 335px;
+  line-height: 29px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+  @media (min-width: $md4) {
+    display: none;
+  }
+  span {
+    font-size: 25px;
+    font-family: 'snell';
+    color: $brown;
+    margin-right: 5px;
+  }
+  p {
+    &:nth-child(1) {
+      text-align: left;
+    }
+    &:nth-child(2) {
+      text-align: right;
+    }
+    &:nth-child(3) {
+      text-align: left;
+    }
+  }
+}
+.lol-4 {
+  @media (min-width: $md1) {
+    width: 513px;
+  }
+}
+.lol-5 {
+  // padding-bottom: 5px;
+  height: 47px;
+  @media (max-width: $md2) {
+    height: 33px;
+  }
+}
+.lol-40 {
+  font-family: 'Poiret One';
+  font-weight: 400;
+  @media (max-width: $md2) {
+    color: $brown;
+    font-family: 'snell';
+    font-weight: 500;
+    -webkit-text-stroke: 0.2px $brown;
+  }
+}
+.lol-6 {
+  @media (max-width: $md4) {
+    display: none;
+  }
+}
+.lol-7 {
+  display: none;
+  @media (max-width: $md4) {
+    display: block;
+  }
+}
+.lol-8 {
+  @media (max-width: $md2) {
+    display: none;
+  }
+}
+.lol-9 {
+  display: none;
+  @media (max-width: $md2) {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+  @media (max-width: $md4) {
+    display: block;
+  }
+}
+.lol-10 {
+  display: flex;
+  justify-content: center;
+}
+.lol-11 {
+  width: 450px;
+  @media (max-width: $md14) {
+    width: 100%;
+  }
+}
+.lol-12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lol-13 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    margin: 0 10px;
+  }
+}
+.lol-15 {
+  width: 380px;
+  height: 660px;
+  img {
+    width: 380px;
+    height: 660px;
+  }
+  @media (max-width: $md2) {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.lol-16 {
+  height: 660px;
+  @media (max-width: $md2) {
+    height: 100%;
+  }
+}
+.lol-14 {
+  @media (min-width: $md1) {
+    margin-top: 40px;
+  }
+}
+.lol-17 {
+  @media (min-width: $md1) {
+    height: 277px;
+    img {
+      height: 277px;
+    }
+  }
+  @media (max-width: $md2) {
+    height: 414px;
+    img {
+      height: 414px;
+    }
+  }
+}
+.lol-18 {
+  @media (max-width: $md4) {
+    text-align: left;
+  }
+}
+.lol-19 {
+  @media (max-width: $md4) {
+    font-size: 27px;
+  }
+}
+.lol-20 {
+  @media (min-width: $md1) {
+    padding-bottom: 119px;
+    width: 100%;
+  }
+}
+.lol-22 {
+  @media (max-width: $md4) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.lol-23 {
+  @media (max-width: $md4) {
+    width: 345px;
+    text-align: center;
+  }
+}
+.lol-25 {
+  @media (max-width: $md4) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.lol-26 {
+  margin-bottom: 80px;
+  @media (max-width: $md4) {
+    margin-bottom: 50px;
+  }
+}
+.lol-27 {
+  @media (max-width: $md4) {
+    margin-bottom: 30px;
+  }
+}
+.lol-29 {
+  @media (min-width: $md2) {
+    padding-top: 80px;
+  }
+}
+.lol-291 {
+  @media (min-width: $md2) {
+    padding-top: 70px;
+  }
+}
+.lol-30 {
+  @media (max-width: $md4) {
+    width: 100px;
+  }
+}
+.lol-31 {
+  @media (min-width: $md1) {
+    width: 432px;
+  }
+}
+.lol-32 {
+  @media (min-width: $md2) {
+    padding-bottom: 20px;
+  }
+}
+.lol-34 {
+  @media (max-width: $md4) {
+    margin-right: -27px;
+  }
+}
+.lol-35 {
+  @media (min-width: $md2) {
+    padding-bottom: 25px;
+  }
+}
+.lol-36 {
+  @media (min-width: $md4) {
+    padding-bottom: 20px;
+  }
+}
+.lol-37 {
+  @media (max-width: $md2) {
+    width: 312px;
+  }
+  @media (max-width: $md3) {
+    width: auto;
+  }
+}
+.lol-38 {
+  @media (max-width: $md2) {
+    margin-right: 113px;
+  }
+  @media (max-width: $md4) {
+    margin-right: 0;
+  }
+}
+.lol-41 {
+  @media (max-width: $md2) {
+    height: 413px;
+    img {
+      height: 413px;
+    }
+  }
+}
+.lol-44 {
+  @media (max-width: $md1) {
+    display: flex;
+    justify-content: flex-end;
+  }
+  @media (max-width: $md4) {
+    display: block;
+  }
+}
+.lol-45 {
+  @media (max-width: $md2) {
+    display: none;
+  }
+  @media (max-width: $md4) {
+    display: block;
+  }
+}
+.lol-46 {
+  display: none;
+  @media (max-width: $md2) {
+    display: flex;
+  }
+  @media (max-width: $md4) {
+    display: none;
+  }
+}
+.lol-47 {
+  @media (max-width: $md4) {
+    margin-bottom: 50px;
+  }
+}

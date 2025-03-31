@@ -1,0 +1,29 @@
+.textile {
+  .servise__head {
+    height: 489px;
+    @media (max-width: $md2) {
+      height: 100%;
+    }
+  }
+  .center-servise {
+    @media (max-width: $md2) {
+      flex-direction: column-reverse;
+    }
+  }
+  .center-servise__small {
+    @media (max-width: $md2) {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      margin-bottom: 50px;
+    }
+    @media (max-width: $md3) {
+      display: none;
+    }
+  }
+  .center-servise__small_wrap {
+    @media (max-width: $md2) {
+      width: 334px;
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.textpic {
+  &__pc {
+    @media (max-width: $md4) {
+      display: none;
+    }
+  }
+  &_mainpc {
+    @media (max-width: $md4) {
+      display: none;
+    }
+    @media (max-width: $md3) {
+      margin-bottom: 50px;
+      font-size: 33px;
+    }
+  }
+  &_mainmodile {
+    display: none;
+    @media (max-width: $md4) {
+      display: block;
+      font-size: 30px;
+      -webkit-text-stroke: 1px $black;
+      line-height: 130%;
+      font-weight: 400;
+      font-family: $one;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .textpic__title {
+      width: 360px;
+    }
+  }
+  &__modile {
+    display: none;
+    @media (max-width: $md4) {
+      display: block;
+      font-size: 30px;
+      -webkit-text-stroke: 1px $black;
+      line-height: 130%;
+      font-weight: 400;
+      font-family: $one;
+      text-transform: uppercase;
+      text-align: center;
+      width: 335px;
+    }
+  }
+  &__modile__right {
+    text-align: right;
+    margin-bottom: 5px;
+  }
+  &__modile__left {
+    text-align: left;
+    display: flex;
+    margin-bottom: 5px;
+  }
+  &__container {
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 51px;
+    font-family: $one;
+    text-align: center;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px $black;
+    line-height: 130%;
+    @media (max-width: $md2) {
+      margin-bottom: 50px;
+      font-size: 33px;
+    }
+    @media (max-width: $md4) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: $md4) {
+      font-size: 30px;
+    }
+  }
+  img {
+    height: 50px;
+    width: 117px;
+    margin: 0 20px;
+    @media (max-width: $md4) {
+      height: 35px;
+      width: 95px;
+    }
+  }
+  &__russnel {
+    color: $brown;
+    font-family: $snell;
+    -webkit-text-stroke: 0.2px $brown;
+    // font-style: italic;
+    font-weight: 500;
+    font-size: 37px;
+    -webkit-text-stroke: 0;
+    text-transform: lowercase;
+    @media (max-width: $md4) {
+      font-family: $one;
+      text-align: center;
+      margin-bottom: 70px;
+      text-transform: uppercase;
+      -webkit-text-stroke: 1px $black;
+      line-height: 130%;
+      font-size: 30px;
+    }
+    &_mob {
+      font-size: 37px;
+      color: $brown;
+      font-family: $snell;
+      -webkit-text-stroke: 0.2px $brown;
+      text-transform: lowercase;
+    }
+  }
+  &__modile__padding {
+    padding-right: 12px;
+  }
+  &__center {
+    display: flex;
+    justify-content: center;
+    @media (max-width: 581px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__deco {
+    text-align: center;
+    color: $brown;
+    font-family: 'Deco';
+    margin-right: 10px;
+    -webkit-text-stroke: 1px $brown;
+  }
+  &__ensnel {
+    // padding-left: 10px;
+    font-family: 'snell';
+    color: #bc936a;
+    text-transform: lowercase;
+    -webkit-text-stroke: 0;
+  }
+}
+.textpic__brown-logo {
+  width: 80px;
+  height: 80px;
+  img {
+    width: 100px;
+    height: 62px;
+  }
+}

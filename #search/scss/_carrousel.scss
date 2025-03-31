@@ -1,0 +1,506 @@
+.carrousel {
+  &__container {
+    height: 670px;
+    position: relative;
+    overflow: hidden;
+    @media (max-width: 1025px) {
+      height: 570px;
+    }
+    @media (max-width: $md2) {
+      height: 470px;
+    }
+    @media (max-width: $md3) {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+    }
+  }
+
+  &__body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @media (max-width: $md3) {
+      height: 638px;
+    }
+    @media (max-width: 499px) {
+      height: 380px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 175px;
+    height: 218px;
+    @media (max-width: 1025px) {
+      width: 149px;
+      height: 188px;
+    }
+    @media (max-width: $md2) {
+      width: 123px;
+      height: 152px;
+    }
+    @media (max-width: $md3) {
+      width: 334px;
+      height: 416px;
+    }
+    @media (max-width: 499px) {
+      width: 258px;
+      height: 320px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    &-big {
+      top: 0%;
+      left: 46%;
+      width: 513px;
+      height: 638px;
+      // @media (max-width: 1140px) {
+      //   top: 25%;
+      //   left: 55%;
+      // }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      @media (max-width: 1025px) {
+        left: 50%;
+        width: 423px;
+        height: 526px;
+      }
+      @media (max-width: $md2) {
+        width: 334px;
+        height: 416px;
+        top: 0%;
+        left: 48%;
+      }
+      @media (max-width: $md3) {
+        width: 175px;
+        height: 218px;
+        top: 51%;
+        left: 57%;
+      }
+      @media (max-width: 499px) {
+        width: 123px;
+        height: 152px;
+        top: 54%;
+        left: 50%;
+      }
+    }
+    &-right {
+      top: 67%;
+      left: 83%;
+      @media (max-width: 1025px) {
+        top: 65%;
+        left: 82%;
+      }
+      @media (max-width: $md2) {
+        top: 63%;
+        left: 80%;
+      }
+      @media (max-width: $md3) {
+        width: 175px;
+        height: 218px;
+        top: 51%;
+        left: 107%;
+      }
+      @media (max-width: 499px) {
+        width: 123px;
+        height: 152px;
+        top: 54%;
+        left: 105%;
+      }
+    }
+    &-on {
+      top: 67%;
+      left: calc(83% + 300px);
+      @media (max-width: $md2) {
+        top: 63%;
+        left: calc(80% + 300px);
+      }
+    }
+  }
+  &__number {
+    position: absolute;
+    top: 10px;
+    right: -42px;
+    font-size: 25px;
+    color: $brown;
+    font-family: $snell;
+    padding: 3px;
+  }
+  &__content {
+    position: absolute;
+    top: 280px;
+    left: 15px;
+    font-weight: 400;
+    font-size: 51px;
+    font-family: $one;
+    text-transform: uppercase;
+    width: 507px;
+    @media (max-width: 1025px) {
+      font-size: 43px;
+      width: 413px;
+      top: 250px;
+    }
+    @media (max-width: $md2) {
+      font-size: 33px;
+      width: 293px;
+      top: 210px;
+    }
+    @media (max-width: $md3) {
+      position: static;
+      text-align: center;
+      margin: 0 auto;
+      // display: flex;
+      // justify-content: center;
+      // flex-direction: column;
+      // align-items: center;
+      width: 313px;
+      p {
+        // text-align: center;
+      }
+    }
+    @media (max-width: $md4) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-end;
+      p {
+        span {
+          font-size: 43px;
+        }
+      }
+    }
+
+    p {
+      -webkit-text-stroke: 1px $black;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      &:nth-child(1) {
+        text-align: left;
+        @media (max-width: $md2) {
+          text-align: right;
+        }
+      }
+      &:nth-child(2) {
+        text-align: right;
+        @media (max-width: $md2) {
+          text-align: left;
+        }
+        @media (max-width: $md4) {
+          width: 100%;
+          display: flex;
+        }
+      }
+      &:nth-child(3) {
+        text-align: center;
+        color: $brown;
+        -webkit-text-stroke: 0;
+        font-family: 'Deco';
+        -webkit-text-stroke: 1px $brown;
+
+        span {
+          // padding-left: 5px;
+          font-family: $snell;
+          color: $brown;
+          text-transform: lowercase;
+          -webkit-text-stroke: 0;
+        }
+        @media (max-width: $md4) {
+          padding-left: 35px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  &__btns {
+    position: absolute;
+    bottom: 100px;
+    left: 15px;
+    @media (max-width: 1040px) {
+      bottom: 20px;
+    }
+    @media (max-width: $md3) {
+      position: static;
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+  &__btn {
+    @media (max-width: $md3) {
+      display: inline-block;
+    }
+  }
+}
+.anime-left {
+  animation-name: anime-left;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  @media (max-width: $md3) {
+    animation-name: anime-left-767;
+  }
+  // @media (max-width: 499px) {
+  //   animation-name: anime-left-499;
+  // }
+}
+.anime-center {
+  animation-name: anime-center;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  @media (max-width: 1040px) {
+    animation-name: anime-center-1140;
+  }
+  @media (max-width: $md2) {
+    animation-name: anime-center-991;
+  }
+  @media (max-width: $md3) {
+    animation-name: anime-center-767;
+  }
+  @media (max-width: 499px) {
+    animation-name: anime-center-499;
+  }
+}
+.anime-right {
+  animation-name: anime-right;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  @media (max-width: 1040px) {
+    animation-name: anime-right-1140;
+  }
+  @media (max-width: $md2) {
+    animation-name: anime-right-911;
+  }
+  @media (max-width: $md3) {
+    animation-name: anime-right-767;
+  }
+  @media (max-width: 499px) {
+    animation-name: anime-right-499;
+  }
+}
+.anime-on {
+  animation-name: anime-on;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  @media (max-width: 1040px) {
+    animation-name: anime-on-1140;
+  }
+  @media (max-width: $md2) {
+    animation-name: anime-on-992;
+  }
+  @media (max-width: $md3) {
+    animation-name: none;
+  }
+}
+@keyframes anime-left {
+  0% {
+    top: 0;
+    left: 0px;
+  }
+  100% {
+    top: 0;
+    left: -250px;
+  }
+}
+@keyframes anime-center {
+  0% {
+    top: 0%;
+    left: 46%;
+    width: 513px;
+    height: 638px;
+  }
+  100% {
+    top: 0;
+    left: 0px;
+    width: 175px;
+    height: 218px;
+  }
+}
+@keyframes anime-right {
+  0% {
+    top: 67%;
+    left: 83%;
+    width: 175px;
+    height: 218px;
+  }
+  100% {
+    top: 0%;
+    left: 46%;
+    width: 513px;
+    height: 638px;
+  }
+}
+@keyframes anime-on {
+  0% {
+    top: 67%;
+    left: calc(83% + 300px);
+  }
+  100% {
+    top: 67%;
+    left: 83%;
+  }
+}
+
+@keyframes anime-center-1140 {
+  0% {
+    top: 0%;
+    left: 50%;
+    width: 423px;
+    height: 526px;
+  }
+  100% {
+    top: 0;
+    left: 0px;
+    width: 149px;
+    height: 188px;
+  }
+}
+@keyframes anime-right-1140 {
+  0% {
+    top: 65%;
+    left: 82%;
+    width: 149px;
+    height: 188px;
+  }
+  100% {
+    top: 0%;
+    left: 50%;
+    width: 423px;
+    height: 526px;
+  }
+}
+@keyframes anime-on-1140 {
+  0% {
+    top: 65%;
+    left: calc(82% + 300px);
+    width: 149px;
+    height: 188px;
+  }
+  100% {
+    top: 65%;
+    left: 82%;
+    width: 149px;
+    height: 188px;
+  }
+}
+
+@keyframes anime-center-991 {
+  0% {
+    width: 334px;
+    height: 416px;
+    top: 0%;
+    left: 48%;
+  }
+  100% {
+    top: 0;
+    left: 0px;
+    width: 123px;
+    height: 152px;
+  }
+}
+
+@keyframes anime-right-911 {
+  0% {
+    top: 63%;
+    left: 80%;
+    width: 123px;
+    height: 152px;
+  }
+  100% {
+    width: 334px;
+    height: 416px;
+    top: 0%;
+    left: 48%;
+  }
+}
+@keyframes anime-on-992 {
+  0% {
+    top: 63%;
+    left: calc(80% + 300px);
+    width: 123px;
+    height: 152px;
+  }
+  100% {
+    top: 63%;
+    left: 80%;
+    width: 123px;
+    height: 152px;
+  }
+}
+@keyframes anime-center-767 {
+  0% {
+    top: 51%;
+    left: 57%;
+    width: 123px;
+    height: 152px;
+  }
+  100% {
+    top: 0;
+    left: 0px;
+    width: 334px;
+    height: 416px;
+  }
+}
+@keyframes anime-left-767 {
+  0% {
+    top: 0;
+    left: 0px;
+  }
+  100% {
+    top: 0;
+    left: -400px;
+  }
+}
+@keyframes anime-right-767 {
+  0% {
+    top: 51%;
+    left: 107%;
+  }
+  100% {
+    top: 51%;
+    left: 57%;
+  }
+}
+@keyframes anime-center-499 {
+  0% {
+    width: 123px;
+    height: 152px;
+    top: 54%;
+    left: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0px;
+    width: 258px;
+    height: 320px;
+  }
+}
+@keyframes anime-right-499 {
+  0% {
+    width: 123px;
+    height: 152px;
+    top: 54%;
+    left: 105%;
+  }
+  100% {
+    width: 123px;
+    height: 152px;
+    top: 54%;
+    left: 50%;
+  }
+}

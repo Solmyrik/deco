@@ -1,0 +1,87 @@
+.map {
+  &__container {
+  }
+
+  &__title {
+    @media (max-width: $md4) {
+      text-align: left;
+    }
+  }
+
+  &__body {
+    display: flex;
+    height: 540px;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    @media (max-width: $md2) {
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  &__content {
+    flex: 0 1 40%;
+    @media (max-width: $md2) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    max-width: 380px;
+    @media (max-width: $md2) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: $md2) {
+      max-width: 100%;
+      margin-bottom: 0px;
+      span {
+        color: $brown;
+      }
+    }
+  }
+
+  &__items {
+    // @media (max-width: $md2) {
+    //   display: flex;
+    // }
+  }
+
+  &__item {
+    max-width: 380px;
+    &:not(:last-child) {
+      margin-bottom: 50px;
+      @media (max-width: $md2) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__names {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__icon {
+    margin-right: 15px;
+  }
+
+  &__name {
+    font-size: 20px;
+  }
+
+  &__info {
+    line-height: 25px;
+  }
+  &__yandex {
+    flex: 0 1 55%;
+    //  width: 680px;
+    //  @media (max-width: 1080px) {
+    //    flex: 0 1 40%;
+    //  }
+    @media (max-width: $md2) {
+      width: 100%;
+    }
+  }
+}
