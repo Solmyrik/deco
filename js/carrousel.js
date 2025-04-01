@@ -36,6 +36,3 @@ function addIndex() {
     index.push(1, 2, 3, 4, 5, 6);
   }
 }
-// addClass();
-// addClass();
-// addClass();
