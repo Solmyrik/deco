@@ -42,9 +42,9 @@
   }
 
   &__items {
-    // @media (max-width: $md2) {
-    //   display: flex;
-    // }
+    @media (max-width: $md2) {
+      margin-top: 30px;
+    }
   }
 
   &__item {
